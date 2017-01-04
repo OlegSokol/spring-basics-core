@@ -1,0 +1,1 @@
+Event [id=1, msg=event2, date=4 січ. 2017 22:12:27]Event [id=0, msg=event1, date=4 січ. 2017 22:13:17]Event [id=1, msg=event2, date=4 січ. 2017 22:13:17]Event [id=0, msg=event1, date=4 січ. 2017 22:13:39]Event [id=1, msg=event2, date=4 січ. 2017 22:13:39]
