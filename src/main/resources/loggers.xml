@@ -14,4 +14,13 @@
     <bean id="cacheFileLogger" class="com.yet.spring.core.logger.CacheFileEventLogger" parent="fileLogger" destroy-method="destroy">
         <constructor-arg name="cacheSize" value="1"/>
     </bean>
+
+    <bean id="combinedEventLogger" class="com.yet.spring.core.logger.CombinedEventLogger">
+        <constructor-arg>
+            <list>
+                <ref bean="eventLogger"/>
+                <ref bean="fileLogger"/>
+            </list>
+        </constructor-arg>
+    </bean>
 </beans>
