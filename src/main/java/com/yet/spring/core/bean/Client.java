@@ -1,9 +1,23 @@
 package com.yet.spring.core.bean;
 
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.PropertySource;
+import org.springframework.stereotype.Component;
+
+@Component
+@PropertySource("classpath:client.properties")
 public class Client {
+
+    @Value("${id}")
     private String id;
+
+    @Value("${name}")
     private String fullName;
+
+    @Value("${greeting}")
     private String greeting;
+
+    public Client() {}
 
     public Client(String id, String fullName) {
         super();
